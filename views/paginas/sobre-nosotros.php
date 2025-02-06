@@ -3,14 +3,14 @@
     <p class="sobre-nosotros__descripcion">Aqui encontraras toda la informacion de EventConnect</p>
 
     <div class="sobre-nosotros__grid">
-        <div class="sobre-nosotros__imagen">
+        <div data-aos="<?php aos_animacion(); ?>" class="sobre-nosotros__imagen">
             <picture>
                 <source srcset="build/img/sobre_eventconnect.avif" type="image/avif">
                 <source srcset="build/img/sobre_eventconnect.webp" type="image/webp">
                 <img loading="lazy" width="200" height="300" src="build/img/sobre_eventconnect.jpg" alt="Sobre EventConnect">
             </picture>
         </div>
-        <div class="sobre-nosotros__contenido">
+        <div data-aos="<?php aos_animacion(); ?>" class="sobre-nosotros__contenido">
             
             <p class="sobre-nosotros__texto">
                 En EventConnect, nos apasiona reunir a desarrolladores de todos los niveles para aprender, compartir y establecer contactos en un entorno estimulante y colaborativo. Ya seas un programador experimentado que busca ampliar tus conocimientos o un estudiante que da sus primeros pasos en el mundo del desarrollo, encontrarás un lugar en nuestra comunidad.

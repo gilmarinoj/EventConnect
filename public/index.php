@@ -64,11 +64,11 @@ $router->get('/admin/registrados', [RegistradosController::class, 'index']);
 $router->get('/admin/regalos', [RegalosController::class, 'index']);
 
 // Area Publica
-
 $router->get('/', [PaginasController::class, 'index']);
 $router->get('/sobre-nosotros', [PaginasController::class, 'sobreNosotros']);
 $router->get('/pases', [PaginasController::class, 'pases']);
 $router->get('/workshops-conferencias', [PaginasController::class, 'conferencias']);
+$router->get('/404', [PaginasController::class, 'error']);
 
 
 $router->comprobarRutas();

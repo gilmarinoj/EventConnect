@@ -1,8 +1,16 @@
 <header class="header">
     <div class="header__contenedor">
         <nav class="header__navegacion">
-            <a href="/registro" class="header__enlace">Registro</a>
-            <a href="/login" class="header__enlace">Iniciar Sesion</a>
+
+            <?php if (is_auth()) { ?>
+                <a href="<?php echo is_admin() ? '/admin/dashboard' : '/finalizar-registro'; ?>" class="header__enlace">Administrar</a>
+                <form method="POST" action="/logout" class="header__form">
+                    <input type="submit" value="Cerrar Sesion" class="header__submit">
+                </form>
+            <?php } else { ?>
+                <a href="/registro" class="header__enlace">Registro</a>
+                <a href="/login" class="header__enlace">Iniciar Sesion</a>
+            <?php } ?>
         </nav>
 
         <div class="header__contenido">
@@ -11,7 +19,7 @@
                     &#60;EventConnect />
                 </h1>
             </a>
-            <p class="header__texto">Diciembre 07-02-2025</p>
+            <p class="header__texto">Febrero 07-02-2025</p>
             <p class="header__texto header__texto--modalidad">En linea - Presencial</p>
 
             <a href="/registro" class="header__boton">Comprar Pase</a>
@@ -27,10 +35,10 @@
             </h2>
         </a>
         <nav class="navegacion">
-            <a href="/sobre-nosotros" class="navegacion__enlace">Sobre Nosotros</a>
-            <a href="/pases" class="navegacion__enlace">Pases</a>
-            <a href="/workshops-conferencias" class="navegacion__enlace">Workshops / Conferencias</a>
-            <a href="/registro" class="navegacion__enlace">Comprar Pase</a>
+            <a href="/sobre-nosotros" class="navegacion__enlace <?php echo pagina_actual('/sobre-nosotros') ? 'navegacion__enlace--actual' : ''; ?>">Sobre Nosotros</a>
+            <a href="/pases" class="navegacion__enlace <?php echo pagina_actual('/pases') ? 'navegacion__enlace--actual' : ''; ?>">Pases</a>
+            <a href="/workshops-conferencias" class="navegacion__enlace <?php echo pagina_actual('/workshops-conferencias') ? 'navegacion__enlace--actual' : ''; ?>">Workshops / Conferencias</a>
+            <a href="/registro" class="navegacion__enlace <?php echo pagina_actual('/registro') ? 'navegacion__enlace--actual' : ''; ?>">Comprar Pase</a>
         </nav>
     </div>
 </div>
