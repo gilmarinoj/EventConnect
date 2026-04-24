@@ -1,15 +1,24 @@
 <?php return array(
     'root' => array(
-        'name' => 'juandelatorre/devwebcamp',
+        'name' => 'gilmarinoj/eventconnect',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4d4867300ac5a9d8c185ba838023ab8a97d09c27',
+        'reference' => '0af06a1d5636b94a9eb50d3e8449fd4b6bbb060b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'gilmarinoj/eventconnect' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0af06a1d5636b94a9eb50d3e8449fd4b6bbb060b',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'graham-campbell/result-type' => array(
             'pretty_version' => 'v1.0.4',
             'version' => '1.0.4.0',
@@ -34,15 +43,6 @@
             'reference' => '04be355f8d6734c826045d02a1079ad658322dad',
             'type' => 'library',
             'install_path' => __DIR__ . '/../intervention/image',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'juandelatorre/devwebcamp' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '4d4867300ac5a9d8c185ba838023ab8a97d09c27',
-            'type' => 'project',
-            'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
